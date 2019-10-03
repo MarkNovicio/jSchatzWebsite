@@ -39,7 +39,6 @@ nav.home.addEventListener("click", function() {
 });
 
 nav.about.addEventListener("click", function() {
-  console.log("This works");
   hide(elements.home);
   hide(elements.contact);
   show(elements.about);
@@ -48,7 +47,6 @@ nav.about.addEventListener("click", function() {
 nav.contact.addEventListener("click", function() {
   hide(elements.home);
   hide(elements.about);
-  console.log("thissss works");
   show(elements.contact);
 });
 
@@ -66,19 +64,10 @@ window.onload = function() {
   elements.about.style.display = "none";
   elements.contact.style.display = "none";
 };
-//elements.home => parent element
-//create element once item is clicked
+
 const createdElement = document.createElement("a");
-elements.swift.addEventListener("click", function() {
-  //const node = document.createTextNode("works");
-  const created = elements.home.appendChild(createdElement);
-  console.log(created);
-});
+elements.swift.addEventListener("click", function() {});
 
-elements.vueJS.addEventListener("click", function() {
-  console.log("works");
-});
+elements.vueJS.addEventListener("click", function() {});
 
-elements.netlify.addEventListener("click", function() {
-  console.log("works");
-});
+elements.netlify.addEventListener("click", function() {});
